@@ -27,7 +27,7 @@ And return a text result, and a base64 encoded sound obtained from Google's text
 
 ## Usage:
 
-- First, run the download_files.py script to download data required for each model in its corresponding folder.
+- First, create empty folders: vqa, caption, currency, emotion, ocr. Then run the download_files.py script to download data required for each model in its corresponding folder.
 - Add you GCP project's json credentials file in ocr folder that would be used in both ocr and tts, and add its name in utils.py script. (Optional if you want sound results and OCR service)
 - Create a virtual environment for python and download the libraries in requirements.txt with 'pip install -r requirements.txt'
 - Run the flask app with command: 'flask run' in the same folder.
