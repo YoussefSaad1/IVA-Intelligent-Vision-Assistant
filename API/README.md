@@ -8,14 +8,21 @@ A flask API for all models used in IVA project.
 The API has a resource for each service that takes a json input of a base64 encoded image, and a text question in case of vqa:
 
 {
+
   'image': *base64 encoded image*,
+  
   'question': 'some text question'
+  
 }
 
 And return a text result, and a base64 encoded sound obtained from Google's text-to-speech:
+
 {
+
   'text': 'some text result',
+  
   'sound': *base64 encoded sound result*
+  
 }
 
 ## Usage:
