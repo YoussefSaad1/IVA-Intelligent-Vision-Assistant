@@ -37,8 +37,8 @@ import com.google.firebase.ml.vision.common.FirebaseVisionImage;
 import com.google.firebase.ml.vision.text.FirebaseVisionCloudTextRecognizerOptions;
 import com.google.firebase.ml.vision.text.FirebaseVisionText;
 import com.google.firebase.ml.vision.text.FirebaseVisionTextRecognizer;
-import com.google.mlkit.nl.languageid.LanguageIdentification;
-import com.google.mlkit.nl.languageid.LanguageIdentifier;
+
+
 
 import org.tensorflow.lite.DataType;
 import org.tensorflow.lite.Interpreter;
@@ -88,7 +88,6 @@ public class ImageActivity extends AppCompatActivity {
     private ImageButton retry;
     private ImageButton copy;
     private Locale langCode = Locale.getDefault();
-    private Locale ocrLangCode = Locale.getDefault();
     private List<String> labels = new ArrayList<String>();
     private AssetFileDescriptor fileDescriptor = null;
     private TensorImage inputImageBuffer;
@@ -130,7 +129,7 @@ public class ImageActivity extends AppCompatActivity {
                     && !serString.equals(getString(R.string.sorry_internet))) {
                 if (OCR_result != null) {
                     if (getLifecycle().getCurrentState() == Lifecycle.State.RESUMED)
-                        setUpAudioFocus(OCR_result, ocrLangCode);
+                        setUpAudioFocus(OCR_result, langCode);
                 } else if (currency_result != null) {
                     if (getLifecycle().getCurrentState() == Lifecycle.State.RESUMED)
                         setUpAudioFocus(currency_result, langCode);
@@ -187,7 +186,7 @@ public class ImageActivity extends AppCompatActivity {
             replayClicked = true;
             if (serviceCode == OPTICAL_CHARACTER_RECOGNITION) {
                 if (!OCR_result.equals("")) {
-                    setUpAudioFocus(OCR_result, ocrLangCode);
+                    setUpAudioFocus(OCR_result, langCode);
 
                 } else if (OCR_result.equals(getString(R.string.please_ocr))) {
                     setUpAudioFocus(getString(R.string.please_ocr), langCode);
@@ -359,31 +358,7 @@ public class ImageActivity extends AppCompatActivity {
                             copy.setVisibility(View.VISIBLE);
 
                             if (!OCR_result.equals("")) {
-                                LanguageIdentifier languageIdentifier =
-                                        LanguageIdentification.getClient();
-                                languageIdentifier.identifyLanguage(OCR_result)
-                                        .addOnSuccessListener(
-                                                new OnSuccessListener<String>() {
-                                                    @Override
-                                                    public void onSuccess(String languageCode) {
-                                                        if (languageCode.equals("und")) {
-
-                                                        } else {
-                                                            ocrLangCode = Locale.forLanguageTag(languageCode);
-                                                            setUpAudioFocus(OCR_result, ocrLangCode);
-                                                        }
-                                                    }
-                                                })
-                                        .addOnFailureListener(
-                                                new OnFailureListener() {
-                                                    @Override
-                                                    public void onFailure(Exception e) {
-                                                        // Model couldn’t be loaded or other internal error.
-                                                        // ...
-                                                        setUpAudioFocus(OCR_result, ocrLangCode);
-
-                                                    }
-                                                });
+                                setUpAudioFocus(OCR_result, langCode);
 
                             } else {
                                 setUpAudioFocus(getString(R.string.please_ocr), langCode);
