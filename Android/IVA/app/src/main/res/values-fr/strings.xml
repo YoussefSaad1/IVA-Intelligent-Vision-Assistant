@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="retry">réessayer</string>
+    <string name="back">retour</string>
+    <string name="auto_flash">flash automatique</string>
+    <string name="five">Cinq livres</string>
+    <string name="ten">Dix livres</string>
+    <string name="twenty">vingt livres</string>
+    <string name="fifty">cinquante livres</string>
+    <string name="hundred">cent livres</string>
+    <string name="two_hundred">deux cents livres</string>
+    <string name="help">aider</string>
+    <string name="help_content">Bienvenue sur l\'appli eva. Pour prendre une photo, appuyez sur le bouton de service requis en bas de l\'écran. Devise à droite et lecture à gauche., Pour contrôler la fonction flash, la pression en haut de l\'écran sur le bouton droit., Après avoir capturé l\'image, un nouvel écran apparaît., L\'écran dispose d\'un bouton pour revenir en haut à gauche, et le bouton pour marquer le haut à droite, ainsi que pour l\'image.</string>
+    <string name="flash_on">flash activé</string>
+    <string name="flash_off">flash désactivé</string>
+    <string name="replay">rejouer</string>
+    <string name="ocr">lire le texte</string>
+    <string name="please_ocr">s\'il vous plaît reprendre la photo</string>
+    <string name="sorry_internet">Désolé, une erreur s\'est produite, veuillez vous assurer que vous êtes connecté à Internet, réessayer</string>
+    <string name="start_ocr">dans le traitement</string>
+    <string name="start_currency">dans le traitement</string>
+    <string name="currencyDetection">reconnaissance de devises</string>
+    <string name="currency_retake">reprendre la photo de la devise</string>
+    <string name="copy">copier le texte</string>
+</resources>

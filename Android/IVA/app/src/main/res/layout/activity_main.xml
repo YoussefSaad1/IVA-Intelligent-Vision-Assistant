@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    >
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/previewView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/previewView">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/flash"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button"
+            android:contentDescription="@string/auto_flash"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/auto_flash"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:importantForAccessibility="yes"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/help"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button"
+            android:contentDescription="@string/help"
+            android:importantForAccessibility="yes"
+            android:padding="10dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/help"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@android:color/transparent"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingTop="8dp"
+        android:paddingRight="12dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/OCR"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button"
+            android:contentDescription="@string/ocr"
+            android:padding="12dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/book"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintHeight_max="80dp"
+            app:layout_constraintHeight_min="70dp"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@id/buttonsLayout"
+            app:layout_constraintTop_toTopOf="@id/buttonsLayout"
+            app:layout_constraintWidth_max="70dp"
+            app:layout_constraintWidth_min="60dp"
+            android:importantForAccessibility="yes"
+            />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/currency"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/button"
+            android:contentDescription="@string/currencyDetection"
+            android:padding="12dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/floos"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintEnd_toEndOf="@id/buttonsLayout"
+            app:layout_constraintHeight_max="80dp"
+            app:layout_constraintHeight_min="70dp"
+            app:layout_constraintHeight_percent="0.2"
+            app:layout_constraintTop_toTopOf="@id/buttonsLayout"
+            app:layout_constraintWidth_max="70dp"
+            app:layout_constraintWidth_min="60dp"
+            android:importantForAccessibility="yes"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

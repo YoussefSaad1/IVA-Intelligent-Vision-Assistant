@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="help">help</string>
+    <string name="auto_flash">auto flash</string>
+    <string name="flash_on">flash on</string>
+    <string name="flash_off">flash off</string>
+    <string name="replay">replay</string>
+    <string name="retry">retry</string>
+    <string name="ocr">read text</string>
+    <string name="start_ocr">processing text</string>
+    <string name="start_currency">processing currency</string>
+    <string name="currency_retake">retake currency photo</string>
+    <string name="help_content">Welcome to the eva app. To take a picture, press the required service button at the bottom of the screen. Currency on the right, and reading on the left., To control the flash feature, the pressure on the top of the screen on the right button., After capturing the image, a new screen appears., The screen has a button to return the top left, and the button to score the top right, as well as To the picture.</string>
+    <string name="please_ocr">please retake photo</string>
+    <string name="sorry_internet">Sorry, something went wrong, please make sure you are connected to the internet, try again</string>
+    <string name="back">back</string>
+    <string name="currencyDetection">currency recognition</string>
+    <string name="five">five pounds</string>
+    <string name="ten">ten pounds</string>
+    <string name="twenty">twenty pounds</string>
+    <string name="fifty">fifty pounds</string>
+    <string name="hundred">hundred pounds</string>
+    <string name="two_hundred">two hundred pounds</string>
+    <string name="copy">copy text</string>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back">back</string>
+    <string name="help">help</string>
+    <string name="auto_flash">automatic flash</string>
+    <string name="flash_on">flash on</string>
+    <string name="help_content">Welcome to the eva app. To take a picture, press the required service button at the bottom of the screen. Currency on the right, and reading on the left., To control the flash feature, the pressure on the top of the screen on the right button., After capturing the image, a new screen appears., The screen has a button to return the top left, and the button to score the top right, as well as To the picture.</string>
+    <string name="flash_off">flash off</string>
+    <string name="replay">replay</string>
+    <string name="retry">retry</string>
+    <string name="ocr">read text</string>
+    <string name="please_ocr">please retake photo</string>
+    <string name="sorry_internet">Sorry, something went wrong, please make sure you are connected to the internet, try again</string>
+    <string name="server_error">A problem occurred with the connection to the server</string>
+    <string name="timeout">The request has taken a long time.</string>
+    <string name="start_ocr">processing text</string>
+    <string name="start_currency">processing currency</string>
+    <string name="currencyDetection">currency recognition</string>
+    <string name="currency_retake">retake currency photo</string>
+</resources>

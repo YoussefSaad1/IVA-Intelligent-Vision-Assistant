@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="back">عَودَةْ</string>
+    <string name="help">مُسَاعَدَة</string>
+    <string name="help_content">"مَرحَبًا بِكْ في تَطبيقِ eva. لالتقاط صُورَةٍ يَتِمُ الضَغْطُ عَلى زِرِ الخِدْمَةِ المَطْلُوبَةِ أَسْفَلَ الشَاشَةْ. العملة على اليمينْ، والقراءة على اليسارْ.، للتحكم فِي خَاصِيَّةِ الفِلَاشْ، يَتِمُ الضَغْطُ عَلَى الزِرِ المَوجُودِ أَعلَى الشَاشَةِ على اليمينْ.، بَعْدَ التقاط الصُورَةْ، تَظهَرُ شَاشَةٌ جَدِيدَةْ.، تَحتَوِي الشَاشَة عَلَى زِرٍ للرُجُوعِ أعلى اليسارْ، و زِرٍ لإِعَادَةِ النَتِيجَةِ أعلى اليمينْ، بِالإِضَافَةِ إِلَى الصُورَةْ. "</string>
+    <string name="auto_flash">" الفِلاشْ تلقائي"</string>
+    <string name="flash_on">" الفِلاشْ مُفَعَّلْ"</string>
+    <string name="flash_off">الفِلاشْ غَيرُ مُفَعَّلْ</string>
+    <string name="replay">إعادَةْ</string>
+    <string name="retry">إعادة المُحَاوَلَة</string>
+    <string name="ocr">قراءة نص</string>
+    <string name="please_ocr">مِن فَضلِكَ أعِدِ التصوير</string>
+    <string name="sorry_internet">عُذْرًا، حدَثَ خَطَأٌ ما، بِرَجاءِ التأكد من الإتصال بالإنترنت، حاوِلْ مَرَةً أُخْرَى</string>
+    <string name="server_error">حَدَثَ مُشْكِلَةْ فِيْ الِاتِصَالِ بِالخَادِمْ</string>
+    <string name="timeout">لَقَد اسْتَغْرَق الطَّلَب وَقْتًا طَوِيلًا .</string>
+    <string name="start_ocr">بِدءُ القراءةْ</string>
+    <string name="start_currency">بِدءُ العُمْلَةْ</string>
+    <string name="currencyDetection">معرفة العُمْلَةْ</string>
+    <string name="currency_retake">" أعِدْ تصوير العُمْلَةْ"</string>
+</resources>
